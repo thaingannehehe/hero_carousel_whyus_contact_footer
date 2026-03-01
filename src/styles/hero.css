@@ -592,6 +592,27 @@ nav.scrolled {
   display: flex;
   gap: 1.2rem;
   padding: 0 0 1rem 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(232, 116, 138, 0.3) transparent;
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: rgba(232, 116, 138, 0.3);
+  border-radius: 3px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 116, 138, 0.5);
 }
 
 @media (max-width: 1024px) {
